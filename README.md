@@ -1,112 +1,99 @@
-# Guardiões do Cosmos: Preservação e Conhecimento
+# **Guardiões do Cosmos: Preservação e Conhecimento**
 
-## Sumário
+Um jogo dinâmico, single-player e offline, que combina desafios interestelares com uma experiência educacional e divertida.
+
+---
+
+## **Índice**
+
 1. [Introdução](#introdução)
    - [Contexto](#contexto)
    - [Objetivos](#objetivos)
    - [Justificativa](#justificativa)
 2. [Descrição do Projeto](#descrição-do-projeto)
-   - [Tema do Projeto](#tema-do-projeto)
+   - [Tema](#tema)
    - [Problemas a Resolver](#problemas-a-resolver)
    - [Limitações](#limitações)
 3. [Especificação Técnica](#especificação-técnica)
-   - [Requisitos do Software](#requisitos-do-software)
-     - [Requisitos Funcionais](#requisitos-funcionais)
-     - [Requisitos Não Funcionais](#requisitos-não-funcionais)
-   - [Considerações de Design](#considerações-de-design)
-   - [Stack Tecnológica](#stack-tecnológica)
-4. [Funcionalidade da Nave com IA](#funcionalidade-da-nave-com-ia)
-5. [Próximos Passos](#próximos-passos)
-6. [Referências](#referências)
+   - [Requisitos Funcionais](#requisitos-funcionais)
+   - [Requisitos Não Funcionais](#requisitos-não-funcionais)
+4. [Considerações de Design](#considerações-de-design)
+5. [Stack Tecnológica](#stack-tecnológica)
+6. [Diagrama de Classes](#diagrama-de-classes)
 
-## Introdução
+---
 
-**Guardiões do Cosmos** é um jogo offline, single-player e dinâmico, que combina diversão com desafios interestelares. A principal proposta do jogo é proporcionar uma experiência imersiva onde o jogador controla uma nave em um cenário gerado proceduralmente, enfrentando obstáculos e desafios criados de forma única a cada partida.
+## **Introdução**
 
-### Contexto
+### **Contexto**
 
-O jogo é ambientado no espaço profundo, onde o jogador assume o controle de uma nave com o objetivo de explorar e sobreviver contra asteroides perigosos. Utilizando geração procedural e inteligência artificial (IA), o jogo cria cenários estelares únicos a cada sessão, garantindo que cada partida seja uma experiência diferente.
+**Guardiões do Cosmos** transporta o jogador ao espaço profundo, colocando-o no controle de uma nave para explorar e sobreviver a desafios estelares. Cada partida é única, graças à geração procedural de cenários e integração com IA.
 
-### Objetivos
+### **Objetivos**
 
-- Desenvolver um jogo dinâmico, focado em diversão e jogabilidade fluida.
-- Implementar uma IA  para geração de cenários estelares e controle de "NPC's" de ajuda.
-- Garantir uma experiência de jogo envolvente, sem necessidade de conexão com a internet.
-- Criar um sistema de desafios variados e adaptáveis a cada partida.
+- Criar um jogo dinâmico e envolvente.
+- Implementar uma IA para controle de NPCs e geração procedural de desafios.
+- Garantir uma experiência de jogo fluida, offline e sem interrupções.
 
-### Justificativa
+### **Justificativa**
 
-Com o avanço das tecnologias de jogos, a geração procedural e o uso de IA têm se tornado ferramentas poderosas para criar experiências únicas. Este projeto se destaca por oferecer uma experiência rica e personalizada para o jogador, sem a necessidade de sistemas online ou conectividade externa.
+A geração procedural e o uso de IA são tendências em jogos modernos. Este projeto une essas tecnologias para criar um jogo divertido e acessível, enriquecendo o aprendizado por meio de jogabilidade.
 
-## Descrição do Projeto
+---
 
-### Tema do Projeto
+## **Descrição do Projeto**
 
-**Guardiões do Cosmos** é um jogo de nave espacial que combina exploração, combate e sobrevivência em um ambiente dinâmico e proceduralmente gerado. O jogo é totalmente offline e projetado para ser acessível e divertido, utilizando IA para enriquecer a experiência.
+### **Tema**
 
-### Problemas a Resolver
+Um jogo de nave espacial focado em exploração, combate e sobrevivência, com cenários únicos criados proceduralmente. É gratuito, offline e ideal para jogadores que buscam desafios imersivos.
 
-1. **Geração Procedural de Cenários:** Implementar algoritmos eficientes para criar cenários estelares únicos em cada partida.
-2. **Integração de IA:** Utilizar IA para controlar naves amigas.
-3. **Desempenho Offline:** Garantir fluidez e funcionalidade completa sem necessidade de conexão com a internet.
-4. **Jogabilidade Rejogável:** Proporcionar uma experiência que incentive os jogadores a voltarem para superar seus próprios recordes.
+### **Problemas a Resolver**
 
-### Limitações
+1. **Geração Procedural:** Algoritmos para criar cenários únicos em cada partida.
+2. **IA Inteligente:** Integração para NPCs e controle dinâmico.
+3. **Jogabilidade Offline:** Experiência completa sem conexão com a internet.
 
-- O jogo é exclusivamente single-player e offline.
-- Suporte inicial limitado apenas para a plataforma Windows.
+### **Limitações**
 
-## Especificação Técnica
+- Disponível apenas para PC.
+- Suporte inicial apenas para a plataforma Windows.
+- Exclusivamente single-player.
 
-### Requisitos do Software
+---
 
-- **Geração Procedural:** Cenários interestelares criados de forma única a cada partida.
-- **IA Dinâmica:** Controle de amigos e ambientes gerados através de algoritmos de IA.
-- **Experiência Single-Player e Offline:** Jogo completo sem necessidade de internet.
+## **Especificação Técnica**
 
-#### Requisitos Funcionais
+### **Requisitos Funcionais**
 
-- Sistema de navegação e combate.
-- Geração procedural de mapas e desafios.
-- Nave controlada por IA interagindo diretamente com o jogador.
+- O jogo deve apresentar um menu com opções de "Start" e "Exit".
+- Nave equipada com laser, que destrói asteroides ao colidir.
+- Sem limite de pontuação.
+- Pontuação aumenta ao destruir asteroides.
 
-#### Requisitos Não Funcionais
+### **Requisitos Não Funcionais**
 
-- Desenvolvido em Godot, otimizado para Windows.
-- Sem dependências externas ou banco de dados.
-- Recursos visuais e sonoros em formatos leves e acessíveis.
+- Desenvolvido com o **Godot Engine**.
+- Compatível exclusivamente com **PC (Windows)**.
 
-### Considerações de Design
+---
 
-O design do jogo foi pensado para ser dinâmico e simples, focando em gráficos 2D estilizados e movimentação fluida. Os cenários são criados proceduralmente, garantindo uma experiência visual rica e variada.
+## **Considerações de Design**
 
-### Stack Tecnológica
+O jogo foi projetado para ser simples e dinâmico, com gráficos 2D estilizados. A movimentação fluida e os cenários procedurais garantem uma experiência de alta qualidade. A interface foi otimizada para jogadores de todas as idades.
 
-- **Linguagem de Programação:** GDScript.
-- **Engine:** Godot, por ser open-source e oferecer suporte robusto para desenvolvimento de jogos 2D.
-- **Ferramentas:** Godot Engine, Visual Studio Code e Git.
+---
 
-## Funcionalidade da Nave com IA
+## **Stack Tecnológica**
 
-A nave controlada por IA é um dos principais diferenciais do jogo, projetada para oferecer interatividade.
+- **Engine:** Godot.
+- **Linguagem:** GDScript.
+- **Ferramentas Adicionais:** Visual Studio Code, Git.
 
-### Características
-- **Comportamento Adaptável:** A IA toma decisões baseadas no ambiente e nas ações do jogador.
-- **Integração Procedural:** A IA é integrada aos cenários gerados, adaptando seu comportamento a cada partida.
+---
 
-### Implementação
-- **Script Utilizado:** `iaship.gd`
-- **Decisões Inteligentes:** A nave avalia proximidade de obstáculos, ataques e posição do jogador para ajustar suas ações.
-- **Movimentação Dinâmica:** Comportamento fluido e imprevisível para maior interatividade.
+## **Diagrama de Classes**
 
-## Próximos Passos
+O diagrama abaixo ilustra as principais classes do projeto e suas interações:
 
-1. Refinar a IA da nave para comportamento mais realista e responsivo.
-2. Melhorar os algoritmos de geração procedural para maior diversidade visual e estratégica.
-3. Adicionar novas funcionalidades, como power-ups e desafios adicionais.
+![Diagrama de Classes](./path-to-your-diagram.png)
 
-## Referências
-
-- [Documentação oficial do Godot](https://docs.godotengine.org/en/stable/)
-- [Guia sobre IA em Jogos](https://aigamedev.com/)
-- [Game Programming Patterns](http://gameprogrammingpatterns.com/)
