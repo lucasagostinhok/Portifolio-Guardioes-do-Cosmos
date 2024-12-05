@@ -121,7 +121,7 @@ A nave foi implementada utilizando scripts na linguagem **GDScript**, nativa da 
 
 O diagrama abaixo apresenta a interação entre os principais componentes do jogo, incluindo a nave controlada por IA:
 
-![Diagrama de Classes](./path-to-diagram.png)
+![Diagrama de Classes](Diagrama)
 
 ---
 
