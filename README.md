@@ -95,5 +95,5 @@ O jogo foi projetado para ser simples e dinâmico, com gráficos 2D estilizados.
 
 O diagrama abaixo ilustra as principais classes do projeto e suas interações:
 
-![Diagrama de Classes](./path-to-your-diagram.png)
+![Diagrama de Classes](Diagrama)
 
