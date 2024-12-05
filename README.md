@@ -31,6 +31,7 @@ Um jogo educacional e dinâmico, projetado para promover a coordenação motora,
 ### **Contexto**
 
 **Guardiões do Cosmos** é um jogo ambientado no espaço, no qual o jogador assume o papel de um piloto intergaláctico encarregado de preservar ecossistemas espaciais, destruindo asteroides. O jogo utiliza inteligência artificial (IA) para gerar cenários dinâmicos e adaptar a experiência a cada partida.
+**Nota:** O jogo foi projetado para ser totalmente offline, permitindo que os jogadores desfrutem da experiência sem a necessidade de conexão com a internet.
 
 ### **Objetivos**
 
@@ -49,6 +50,8 @@ Com a crescente relevância de tecnologias como a IA e geração procedural, o p
 ### **Tema**
 
 O jogo é centrado na preservação de ecossistemas intergalácticos. Com sistemas estelares criados proceduralmente, o jogador enfrentará asteroides que ameaçam planetas habitados. A nave controlada por IA complementa a jogabilidade, fornecendo suporte inteligente e dinâmico.
+O jogo é completamente offline, permitindo uma experiência independente de conectividade, ideal para todos os ambientes.
+
 
 ### **Problemas a Resolver**
 
@@ -73,6 +76,7 @@ O jogo é centrado na preservação de ecossistemas intergalácticos. Com sistem
 
 ### **Requisitos Não Funcionais**
 
+- O jogo deve funcionar completamente offline, sem necessidade de conexão à internet para sua execução.
 - Desenvolvido na engine **Godot**.
 - Som no formato WAV para efeitos de disparo, explosões e início do jogo.
 - Compatível apenas com PC (Windows).
