@@ -1,6 +1,6 @@
 # **Guardiões do Cosmos: Preservação e Conhecimento**
 
-Um jogo dinâmico, single-player e offline, que combina desafios interestelares com uma experiência educacional e divertida.
+Um jogo educacional e dinâmico, projetado para promover a coordenação motora, agilidade e raciocínio rápido, com uma nave controlada por Inteligência Artificial para enriquecer a experiência do jogador.
 
 ---
 
@@ -17,9 +17,12 @@ Um jogo dinâmico, single-player e offline, que combina desafios interestelares 
 3. [Especificação Técnica](#especificação-técnica)
    - [Requisitos Funcionais](#requisitos-funcionais)
    - [Requisitos Não Funcionais](#requisitos-não-funcionais)
-4. [Considerações de Design](#considerações-de-design)
-5. [Stack Tecnológica](#stack-tecnológica)
-6. [Diagrama de Classes](#diagrama-de-classes)
+4. [Nave Controlada por IA](#nave-controlada-por-ia)
+5. [Considerações de Design](#considerações-de-design)
+6. [Stack Tecnológica](#stack-tecnológica)
+7. [Considerações de Segurança](#considerações-de-segurança)
+8. [Diagrama de Classes](#diagrama-de-classes)
+9. [Próximos Passos](#próximos-passos)
 
 ---
 
@@ -27,17 +30,17 @@ Um jogo dinâmico, single-player e offline, que combina desafios interestelares 
 
 ### **Contexto**
 
-**Guardiões do Cosmos** transporta o jogador ao espaço profundo, colocando-o no controle de uma nave para explorar e sobreviver a desafios estelares. Cada partida é única, graças à geração procedural de cenários e integração com IA.
+**Guardiões do Cosmos** é um jogo ambientado no espaço, no qual o jogador assume o papel de um piloto intergaláctico encarregado de preservar ecossistemas espaciais, destruindo asteroides. O jogo utiliza inteligência artificial (IA) para gerar cenários dinâmicos e adaptar a experiência a cada partida.
 
 ### **Objetivos**
 
-- Criar um jogo dinâmico e envolvente.
-- Implementar uma IA para controle de NPCs e geração procedural de desafios.
-- Garantir uma experiência de jogo fluida, offline e sem interrupções.
+- Desenvolver um jogo educacional interativo, que une aprendizado e diversão.
+- Implementar IA para controle de naves aliadas e geração procedural de desafios únicos.
+- Promover a exploração espacial enquanto dissemina conhecimento astronômico.
 
 ### **Justificativa**
 
-A geração procedural e o uso de IA são tendências em jogos modernos. Este projeto une essas tecnologias para criar um jogo divertido e acessível, enriquecendo o aprendizado por meio de jogabilidade.
+Com a crescente relevância de tecnologias como a IA e geração procedural, o projeto demonstra como esses avanços podem ser aplicados para criar experiências de aprendizado ricas, personalizadas e envolventes. Além disso, a interação com uma nave controlada por IA oferece ao jogador suporte estratégico durante a partida.
 
 ---
 
@@ -45,19 +48,18 @@ A geração procedural e o uso de IA são tendências em jogos modernos. Este pr
 
 ### **Tema**
 
-Um jogo de nave espacial focado em exploração, combate e sobrevivência, com cenários únicos criados proceduralmente. É gratuito, offline e ideal para jogadores que buscam desafios imersivos.
+O jogo é centrado na preservação de ecossistemas intergalácticos. Com sistemas estelares criados proceduralmente, o jogador enfrentará asteroides que ameaçam planetas habitados. A nave controlada por IA complementa a jogabilidade, fornecendo suporte inteligente e dinâmico.
 
 ### **Problemas a Resolver**
 
-1. **Geração Procedural:** Algoritmos para criar cenários únicos em cada partida.
-2. **IA Inteligente:** Integração para NPCs e controle dinâmico.
-3. **Jogabilidade Offline:** Experiência completa sem conexão com a internet.
+1. **Geração Procedural:** Criação de cenários únicos e adaptáveis.
+2. **IA Inteligente:** Nave aliada que interage com o jogador e o ambiente.
+3. **Desempenho:** Otimizar o uso de recursos para garantir fluidez no gameplay.
 
 ### **Limitações**
 
-- Disponível apenas para PC.
-- Suporte inicial apenas para a plataforma Windows.
-- Exclusivamente single-player.
+- Compatível apenas com a plataforma Windows.
+- Sem suporte a multiplayer no momento.
 
 ---
 
@@ -65,35 +67,68 @@ Um jogo de nave espacial focado em exploração, combate e sobrevivência, com c
 
 ### **Requisitos Funcionais**
 
-- O jogo deve apresentar um menu com opções de "Start" e "Exit".
-- Nave equipada com laser, que destrói asteroides ao colidir.
-- Sem limite de pontuação.
-- Pontuação aumenta ao destruir asteroides.
+- Menu inicial com opções "Start" e "Exit".
+- Sistema de combate com laser que destrói asteroides.
+- Sistema de pontuação baseado em destruição de asteroides.
 
 ### **Requisitos Não Funcionais**
 
-- Desenvolvido com o **Godot Engine**.
-- Compatível exclusivamente com **PC (Windows)**.
+- Desenvolvido na engine **Godot**.
+- Som no formato WAV para efeitos de disparo, explosões e início do jogo.
+- Compatível apenas com PC (Windows).
+
+---
+
+## **Nave Controlada por IA**
+
+### **Descrição**
+A nave aliada é um componente central do jogo. Controlada por um sistema de IA, ela fornece suporte estratégico ao jogador, interagindo com o ambiente e reagindo às ameaças.
+
+### **Funcionalidades**
+- **Movimentação Dinâmica:** A nave segue trajetórias inteligentes para evitar colisões.
+- **Combate Automatizado:** Dispara contra asteroides em áreas críticas.
+- **Cooperação com o Jogador:** Adapta suas ações imitando o comportamento do jogador.
+
+### **Implementação**
+A nave foi implementada utilizando scripts na linguagem **GDScript**, nativa da engine Godot. O sistema de IA foi projetado para calcular riscos e oportunidades em tempo real.
 
 ---
 
 ## **Considerações de Design**
 
-O jogo foi projetado para ser simples e dinâmico, com gráficos 2D estilizados. A movimentação fluida e os cenários procedurais garantem uma experiência de alta qualidade. A interface foi otimizada para jogadores de todas as idades.
+- **Estilo Visual:** Gráficos 2D com arte em estilo cartoon.
+- **Arquitetura:** Padrão MVC (Model-View-Controller) para facilitar manutenção e expansão.
+- **Geração Procedural:** Cenários dinâmicos para garantir uma experiência única a cada partida.
 
 ---
 
 ## **Stack Tecnológica**
 
 - **Engine:** Godot.
-- **Linguagem:** GDScript.
-- **Ferramentas Adicionais:** Visual Studio Code, Git.
+- **Linguagem de Script:** GDScript.
+- **Ferramentas Adicionais:** Trello para organização e Git para controle de versão.
+
+---
+
+## **Considerações de Segurança**
+
+- **Dados Locais:** O jogo não coleta nem armazena dados do usuário.
+- **Segurança Simples:** Como o jogo é offline, não há autenticação ou banco de dados no momento.
 
 ---
 
 ## **Diagrama de Classes**
 
-O diagrama abaixo ilustra as principais classes do projeto e suas interações:
+O diagrama abaixo apresenta a interação entre os principais componentes do jogo, incluindo a nave controlada por IA:
 
-![Diagrama de Classes](Diagrama)
+![Diagrama de Classes](./path-to-diagram.png)
 
+---
+
+## **Próximos Passos**
+
+1. **Aprimoramento da IA:** Tornar a nave aliada mais responsiva e estratégica.
+2. **Expansão dos Cenários:** Adicionar novas variações de mapas gerados proceduralmente.
+3. **Melhoria na Otimização:** Reduzir ainda mais o consumo de recursos.
+
+---
