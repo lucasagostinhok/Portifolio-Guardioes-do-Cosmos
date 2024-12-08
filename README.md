@@ -38,6 +38,7 @@ Um jogo educacional e dinâmico, projetado para promover a coordenação motora,
 - Desenvolver um jogo educacional interativo, que une aprendizado e diversão.
 - Implementar IA para controle de naves aliadas e geração procedural de desafios únicos.
 - Promover a exploração espacial enquanto dissemina conhecimento astronômico.
+- Jogabilidade Offline: Totalmente independente de conexão com a internet, perfeito para jogadores que buscam experiências em qualquer lugar.
 
 ### **Justificativa**
 
