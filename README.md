@@ -1,4 +1,4 @@
-# **Guardiões do Cosmos: Preservação e Conhecimento**
+# **Guardiões do Cosmos**
 
 Um jogo educacional e dinâmico, projetado para promover a coordenação motora, agilidade e raciocínio rápido, com uma nave controlada por Inteligência Artificial para enriquecer a experiência do jogador.
 
@@ -30,7 +30,7 @@ Um jogo educacional e dinâmico, projetado para promover a coordenação motora,
 
 ### **Contexto**
 
-**Guardiões do Cosmos** é um jogo ambientado no espaço, no qual o jogador assume o papel de um piloto intergaláctico encarregado de preservar ecossistemas espaciais, destruindo asteroides. O jogo utiliza inteligência artificial (IA) para gerar cenários dinâmicos e adaptar a experiência a cada partida.
+**Guardiões do Cosmos** é um jogo ambientado no espaço, no qual o jogador assume o papel de um piloto intergaláctico encarregado de preservar ecossistemas espaciais, destruindo asteroides. O jogo utiliza inteligência artificial (IA) para controlar uma Nave alida e geração procedural de cenários dinâmicos e adaptar a experiência a cada partida.
 **Nota:** O jogo foi projetado para ser totalmente offline, permitindo que os jogadores desfrutem da experiência sem a necessidade de conexão com a internet.
 
 ### **Objetivos**
