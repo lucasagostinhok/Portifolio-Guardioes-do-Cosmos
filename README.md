@@ -23,6 +23,7 @@ Um jogo educacional e dinâmico, projetado para promover a coordenação motora,
 7. [Considerações de Segurança](#considerações-de-segurança)
 8. [Diagrama de Classes](#diagrama-de-classes)
 9. [Próximos Passos](#próximos-passos)
+10. [Referências](#referências)
 
 ---
 
@@ -138,5 +139,18 @@ O diagrama abaixo apresenta a interação entre os principais componentes do jog
 1. **Aprimoramento da IA:** Tornar a nave aliada mais responsiva e estratégica.
 2. **Expansão dos Cenários:** Adicionar novas variações de mapas gerados proceduralmente.
 3. **Melhoria na Otimização:** Reduzir ainda mais o consumo de recursos.
+
+---
+
+## **Referências**
+
+[Godot](https://godotengine.org/)
+•	[Documentação oficial do Godot](https://docs.godotengine.org/en/stable/)
+•	[Referências sobre geração procedural de conteúdo](http://pcg.wikidot.com/)
+•	[Tutoriais e guias de desenvolvimento de jogos](https://gamedev.stackexchange.com/)
+•	[Asteroids, Atari](https://www.atari2600.com.br/Atari/Roms/01Zx/Asteroids)
+•	[Flappy Bird](https://pt.wikipedia.org/wiki/Flappy_Bird)
+•	[Geometry Dash](https://geometrydashlitepc.io/)
+•  [Paciência](https://pt.wikipedia.org/wiki/Paci%C3%AAncia_(jogo))
 
 ---
