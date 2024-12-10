@@ -144,13 +144,18 @@ O diagrama abaixo apresenta a interação entre os principais componentes do jog
 
 ## **Referências**
 
-[Godot](https://godotengine.org/)
 •	[Documentação oficial do Godot](https://docs.godotengine.org/en/stable/)
+
 •	[Referências sobre geração procedural de conteúdo](http://pcg.wikidot.com/)
+
 •	[Tutoriais e guias de desenvolvimento de jogos](https://gamedev.stackexchange.com/)
+
 •	[Asteroids, Atari](https://www.atari2600.com.br/Atari/Roms/01Zx/Asteroids)
+
 •	[Flappy Bird](https://pt.wikipedia.org/wiki/Flappy_Bird)
+
 •	[Geometry Dash](https://geometrydashlitepc.io/)
+
 •  [Paciência](https://pt.wikipedia.org/wiki/Paci%C3%AAncia_(jogo))
 
 ---
